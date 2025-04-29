@@ -1,0 +1,103 @@
+/* Enhanced fade effect for primary content */
+.post-card .primary .content {
+  -webkit-mask-image: linear-gradient(black 175px, transparent 250px);
+  mask-image: linear-gradient(black 175px, transparent 250px);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #475569;
+}
+
+/* Enhanced fade effect for secondary title */
+.post-card .secondary .title {
+  -webkit-mask-image: linear-gradient(black 70px, transparent 125px);
+  mask-image: linear-gradient(black 70px, transparent 125px);
+}
+
+/* Add some hover effects */
+.post-card:hover {
+  transform: translateY(-3px);
+  transition: transform 0.3s ease;
+}
+
+/* Enhance typography */
+.post-card .title {
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.75rem;
+}
+
+/* Global scrollbar */
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for modern browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.post-card {
+  animation: fadeIn 0.3s ease-in;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Markdown content styling */
+.post-card .content h1,
+.post-card .content h2,
+.post-card .content h3 {
+  color: #1e293b;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-card .content p {
+  margin-bottom: 1rem;
+}
+
+.post-card .content a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.post-card .content a:hover {
+  text-decoration: underline;
+}
+
+.post-card .content code {
+  background-color: #f1f5f9;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.post-card .content blockquote {
+  border-left: 3px solid #4f46e5;
+  padding-left: 1rem;
+  margin-left: 0;
+  color: #64748b;
+}
