@@ -25,6 +25,7 @@ import SearchView from "./components/views/SearchView";
 import MessengerView from "./components/views/MessengerView";
 import { initiateSocketConnection } from "./helpers/socketHelper";
 
+
 function App() {
   initiateSocketConnection();
 
