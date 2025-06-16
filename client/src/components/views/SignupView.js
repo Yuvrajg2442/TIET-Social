@@ -66,7 +66,9 @@ const SignupView = () => {
     if (!isEmail(formData.email)) {
       errors.email = "Must be a valid email address";
     }
-
+    else if (!formData.email.toLowerCase().endsWith("@thapar.edu")) {
+      errors.email = "Email must end with @thapar.edu";
+    }
     setErrors(errors);
 
     return errors;

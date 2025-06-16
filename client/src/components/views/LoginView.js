@@ -25,12 +25,18 @@ const LoginView = () => {
   const [serverError, setServerError] = useState("");
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  
+    if (name === "email") {
+      const isValid = /^[A-Za-z0-9._%+-]+@thapar\.edu$/.test(value);
+      setEmailError(isValid ? "" : "Please use a valid @thapar.edu email");
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    if (emailError) return;
     const data = await login(formData);
     if (data.error) {
       setServerError(data.error);
@@ -98,6 +104,8 @@ const LoginView = () => {
     fontWeight: "bold",
   };
 
+  const [emailError, setEmailError] = useState("");
+
   return (
     <Box sx={backgroundStyle}>
       <Box sx={cardStyle}>
@@ -122,6 +130,8 @@ const LoginView = () => {
               name="email"
               onChange={handleChange}
               sx={textFieldStyle}
+              error={!!emailError}
+              helperText={emailError}
             />
             <TextField
               label="Password"
