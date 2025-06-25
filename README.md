@@ -93,4 +93,8 @@ Ensure the following variables are set in your environment:
 
 ## 🙏 Acknowledgments
 <sub>Special thanks to **Material-UI** for its comprehensive component library and **MongoDB Atlas** for reliable cloud database solutions.</sub>
+<<<<<<< HEAD
 =======
+=======
+=======
+>>>>>>> 168523aee9a4c9443ad40c487bc339a0b41de1c5

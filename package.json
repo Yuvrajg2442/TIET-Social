@@ -1,15 +1,11 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "Express API for TietSocial (deployed as Netlify Function)",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon server.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "start": "node app.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "bad-words": "^3.0.3",
     "bcrypt": "^5.0.1",
@@ -19,8 +15,6 @@
     "express-validator": "^6.14.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.13.3",
-    "nodemon": "^2.0.16",
-    "socket.io": "^4.8.1",
     "validator": "^13.7.0"
   }
 }
