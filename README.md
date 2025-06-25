@@ -6,12 +6,31 @@
 **TIET Social** is an exclusive platform designed for college students to engage, collaborate, and share ideas. It offers a user-friendly interface and a secure space for students to build their network and foster a community of mutual interests.
 
 ## 📖 Table of Contents
-- [Tech Stack](#tech-stack)
 - [Features](#features)
+- [Tech Stack](#tech-stack)
 - [Installation](#installation)
 - [Environment Variables](#environment-variables)
 - [Usage](#usage)
 - [Future Enhancements](#future-enhancements)
+
+## ✨ Features
+- **Real-Time Chat**: Instant and smooth communication between users.
+- **User Authentication**: Secure login and signup functionality.
+- **Post Creation and Engagement**: Users can share posts, comment, and interact with content.
+- **Profile Management**: Personalized user profiles.
+- **Profanity Filter**: Integrated filter to maintain respectful content.
+- 
+## Images
+
+- **Dashboard Page:**  
+  ![Dashboard Screenshot](Screenshots/Dashboard.png)
+
+- **Register Person Page:**  
+  ![Register Person Screenshot](Screenshots/Register.png)
+
+- **Live Attendance Page:**  
+  ![Live Attendance Screenshot](Screenshots/FaceRecognition2.png)
+
 
 ## 🛠️ Tech Stack
 ### Frontend
@@ -27,13 +46,6 @@
 
 ### Database
 - **MongoDB Atlas**: A cloud-based, highly scalable NoSQL database.
-
-## ✨ Features
-- **Real-Time Chat**: Instant and smooth communication between users.
-- **User Authentication**: Secure login and signup functionality.
-- **Post Creation and Engagement**: Users can share posts, comment, and interact with content.
-- **Profile Management**: Personalized user profiles.
-- **Profanity Filter**: Integrated filter to maintain respectful content.
 
 ## 🚀 Installation
 ### Steps to get started:
@@ -97,4 +109,3 @@ Ensure the following variables are set in your environment:
 =======
 =======
 =======
->>>>>>> 168523aee9a4c9443ad40c487bc339a0b41de1c5
