@@ -22,15 +22,23 @@
 - 
 ## Images
 
-- **Dashboard Page:**  
-  ![Dashboard Screenshot](Screenshots/Dashboard.png)
+- **Signup Page:**  
+  ![Signup](images/2.jpeg)
 
-- **Register Person Page:**  
-  ![Register Person Screenshot](Screenshots/Register.png)
+- **Login Page:**  
+  ![Login](images/1.jpeg)
 
-- **Live Attendance Page:**  
-  ![Live Attendance Screenshot](Screenshots/FaceRecognition2.png)
+- **Home Page:**  
+  ![Home feed](images/3.jpeg)
 
+- **Profile Page:**  
+  ![Profile](images/4.jpeg)
+
+- **Post Feature:**  
+  ![Post](images/5.jpeg)
+
+- **Messaging Feature**  
+  ![chat](images/6.jpeg)
 
 ## 🛠️ Tech Stack
 ### Frontend
