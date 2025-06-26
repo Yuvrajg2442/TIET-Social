@@ -17,11 +17,7 @@ dotenv.config();
 const httpServer = require("http").createServer(app);
 const io = require("socket.io")(httpServer, {
   cors: {
-<<<<<<< HEAD
-    origin: ["http://localhost:3000" , "https://tietsocial.netlify.app"],  // Make sure this is correct for your frontend
-=======
-    origin: ["http://localhost:3000", "https://tietsocial.netlify.app"],  // Make sure this is correct for your frontend
->>>>>>> 168523aee9a4c9443ad40c487bc339a0b41de1c5
+origin: ["http://localhost:3000", "https://tietsocial.netlify.app"],  // Make sure this is correct for your frontend
   },
 });
 
